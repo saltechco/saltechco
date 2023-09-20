@@ -43,13 +43,11 @@ Below is an example theme extension class with a single color defined. Your gene
           .The generated MyApp class does the work of registering the
               CustomColors extensions with the appropriate light or dark theme.
 
-      You can assess those colors by calling extension on the theme with the
-          parameterized CustomColors
-class.After which,
-    you can use it in any color property field.
+You can assess those colors by calling extension on the theme with the parameterized ``` CustomColors.After ``` which you can use it in any color property field.
 
-                      final custom1Container
-= Theme.of(context).extension<CustomColors>()!.custom1Container;
+```
+final custom1Container =
+    Theme.of(context).extension<CustomColors>()!.custom1Container;
 final onCustom1Container =
     Theme.of(context).extension<CustomColors>()!.oncustom1Container;
 final custom2Container =
@@ -76,5 +74,5 @@ Card(
     );
   }
 
-
+```
 For more information and examples, check out our the [dynamic_color package](https://pub.dev/packages/dynamic_color) on pub.dev.
